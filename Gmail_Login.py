@@ -15,13 +15,13 @@ driver.get("https://www.gmail.com")
 driver.find_element(By.NAME, "identifier").send_keys("momtajhossainmow@gmail.com")
 time.sleep(2)
 #Step-6: Click on the next button
-driver.find_element(By.CLASS_NAME, "VfPpkd-vQzf8d").click()  
+driver.find_element(By.CSS_SELECTOR, "#identifierNext").click()  
 time.sleep(3)
 #Step-7: Identify the password text box and pass the value
-driver.find_element(By.CLASS_NAME, "Passwd").send_keys("########")  
+driver.find_element(By.NAME, "Passwd").send_keys("####")  
 time.sleep(3) 
 #Step-8: Click on the next button
-driver.find_element(By.ID, "password").click()  
+driver.find_element(By.CSS_SELECTOR, "#identifierNext").click()  
 time.sleep(3)  
 #Step-9: Close the browser
 driver.close() 
